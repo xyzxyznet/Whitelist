@@ -1,21 +1,18 @@
-local tablekey = {
-"Key_dfJuujlV7HhPMpPm6CMR",    
-"Key_d6vtfGk0gJuhFzohVRis",
-"Key_hQwqe2fpVDyC4StuxqKc",
-"Key_wEaLsHE8oNHaENhKo2Hc",
-"Key_k9vrCrPMS9zdnHECtQdE",
-"Key_eLsRHcN0XjvOmJPIdmOx",
-"Key_0lttn6Y9bzsLgURIDIRu",
-"Key_LZrJoEsLhGw3QcLPjpz4",
-"Key_wMznOBLDkzWLvW4nagYT",
-"Key_7j0VIqP8P9p73zHfLBon",
-"Key_8kyERhFmHL4Hwqb",
-"Key_e6QoPEdaUYWP744",
+local keys = {
+"dfJuujlV7HhPMpPm6CMR",    
+"d6vtfGk0gJuhFzohVRis",
+"hQwqe2fpVDyC4StuxqKc",
+"wEaLsHE8oNHaENhKo2Hc",
+"k9vrCrPMS9zdnHECtQdE",
+"eLsRHcN0XjvOmJPIdmOx",
+"0lttn6Y9bzsLgURIDIRu",
+"LZrJoEsLhGw3QcLPjpz4",
+"wMznOBLDkzWLvW4nagYT",
+"7j0VIqP8P9p73zHfLBon",
+"8kyERhFmHL4HwqbzlOpc",
+"e6QoPEdaUYWP744Vizka",
 }
-if table.find(tablekey, getgenv().key) then
-if not _G.require then
-    _G.require = require
-end
+if keys[_G.Key] then
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroeramaa/TurtleLib/main/TurtleUiLib.lua"))()
 wait(2)
 
@@ -394,8 +391,5 @@ end)
 
 library:Keybind("P")
 else
-game.Players.LocalPlayer:Kick("dm zoop#4707 for key")
-end
-if not _G.require then
-    _G.require = require
+   game.Players.LocalPlayer:Kick("zlO")
 end
